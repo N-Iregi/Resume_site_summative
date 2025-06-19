@@ -1,0 +1,445 @@
+/* -----------------------------------
+   FONT IMPORT
+----------------------------------- */
+/* Import Google Fonts for styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&display=swap');
+
+/* -----------------------------------
+   GLOBAL STYLES
+----------------------------------- */
+/* Base styles for the entire page */
+body {
+  font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #a39171; /* Soft brown background */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+   HEADER
+----------------------------------- */
+/* Header with gradient background and white text */
+header {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  top: 0;
+  z-index: 999;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* -----------------------------------
+   NAVIGATION
+----------------------------------- */
+/* Navigation bar layout */
+#navbar {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Navigation link styles */
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #05277e;
+  background-color: #000001;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Mobile menu toggle button (initially hidden) */
+.menu-toggle {
+  display: none;
+  background: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* -----------------------------------
+   MAIN & SECTIONS
+----------------------------------- */
+/* Main layout container */
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Section card-style layout */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.8s ease-in-out;
+}
+
+/* Gradient background for major sections */
+#about, #education,
+#skills, #projects,
+#experience, #contact {
+  background: linear-gradient(to right, #abc4ab, #727d71);
+  color: #222;
+}
+
+/* Flex layout for About & Education side-by-side */
+.section-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+#about, #education {
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+}
+
+/* -----------------------------------
+   PROFILE IMAGE
+----------------------------------- */
+/* Styling for circular profile photo */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------------------------
+   SKILLS
+----------------------------------- */
+/* Container for skill cards */
+.skills-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Box for each skill group */
+.skills-box {
+  flex: 1;
+  min-width: 280px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon layout for tech skills */
+.icon-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+
+.icon-skills i, .skill-icon {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon-skills i:hover {
+  transform: scale(1.2);
+  color: #007BFF;
+}
+
+/* Image icons for non-FontAwesome skills */
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  margin: 12px;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Soft skills list styling */
+.soft-skills {
+  list-style: square inside;
+  padding-left: 1rem;
+}
+
+.soft-skills li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.soft-skills li:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+  font-weight: 600;
+}
+
+/* -----------------------------------
+   PROJECTS
+----------------------------------- */
+/* Layout for project scroll cards */
+.projects-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+/* Card styling for individual projects */
+.project-card {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, #223a65, #88A0A8);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/* Custom scrollbar for project list */
+.projects-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 4px;
+}
+
+/* -----------------------------------
+   EXPERIENCE & EDUCATION LISTS
+----------------------------------- */
+#education ul {
+  list-style: none;
+  padding: 0;
+}
+
+#education li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+#education i {
+  margin-right: 8px;
+  color: #444;
+}
+
+/* -----------------------------------
+   CONTACT FORM
+----------------------------------- */
+/* Input and textarea styling */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+/* Submit button style */
+button {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(to right, #223a65, #88A0A8);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+footer {
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 2rem;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #0b0c0c;
+  transform: scale(1.2);
+}
+
+/* -----------------------------------
+   MODALS (e.g. image preview)
+----------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 80%;
+  position: relative;
+}
+
+.modal-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* -----------------------------------
+   ACTIVE SECTION HIGHLIGHT
+----------------------------------- */
+.active-section {
+  outline: 4px solid #007BFF;
+  outline-offset: -4px;
+  transition: outline 0.5s ease;
+}
+
+/* -----------------------------------
+   RESPONSIVE STYLES
+----------------------------------- */
+@media (max-width: 768px) {
+  /* Show toggle menu on small screens */
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  /* Hide navbar by default */
+  #navbar {
+    display: none;
+  }
+
+  /* Show navbar when menu is toggled */
+  #navbar.visible {
+    display: block;
+  }
+
+  #navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  #navbar li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Stack about section vertically */
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin: 0 auto;
+  }
+}
+
+/* -----------------------------------
+   SECTION ANIMATION ON SCROLL
+----------------------------------- */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

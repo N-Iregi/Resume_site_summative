@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- This declares the document as an HTML5 document -->
+<html lang="en">
+
+<head>
+    <!-- Basic settings for character encoding and mobile responsiveness -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title that appears on the browser tab -->
+    <title>Neville Iregi | Resume</title>
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome icons (for social media icons, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts used in the site -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Website header: name, social icons, and navigation menu -->
+    <header>
+        <h1>Neville <br>Iregi<br></h1>
+
+        <!-- Social media links with icons -->
+        <div class="social-icons">
+            <a href="https://x.com/0x6E6576" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/neville-iregi-b9972b182/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/N-Iregi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:n.iregi@alustudent.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+
+        <!-- Navigation bar for smooth scrolling to different sections -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Grouping About and Education sections side-by-side -->
+        <div class="section-row">
+            <!-- About Me section with profile image -->
+            <section id="about">
+                <h2>About</h2>
+                <img src="Profilepic.jpg" alt="Profile Picture" class="profile-img">
+                <p>Hello, I'm Neville, a Software Engineer passionate about cybersecurity and its use in digital
+                    transformation of the African Economy.
+                    <br><br>
+                    Additionally, I love C and assembly!
+                </p>
+            </section>
+
+            <!-- Education section with degree info -->
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <strong>African Leadership University</strong><br>
+                        <i>BSc (Hons) Software Engineering<br></i>
+                        Kigali, Rwanda — (Sept 2024 – Expected 2027)
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Skills section divided into Technical and Soft Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- Technical Skills with icons -->
+                <div class="skills-box">
+                    <h3>Technical Skills</h3>
+                    <div class="icon-skills">
+                        <!-- Font Awesome and custom icons -->
+                        <i class="fa-brands fa-html5" style="color: #511f31;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #4b1f51;"></i>
+                        <i class="fa-brands fa-js" style="color: #3a7524;"></i>
+                        <i class="fa-brands fa-python" style="color: #e6df0a;"></i>
+                        <i class="fa-brands fa-git-alt" style="color: #dd3a08;"></i>
+                        <img src="sql.png" alt="SQL" class="skill-icon">
+                        <img src="C-icon.png" alt="C Programming" class="skill-icon">
+                        <img src="Assembly.png" alt="Assembly" class="skill-icon">
+                    </div>
+                </div>
+
+                <!-- Soft Skills as a list -->
+                <div class="skills-box">
+                    <h3>Soft Skills</h3>
+                    <ul class="soft-skills">
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem Solving</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <!-- Job #1 -->
+                <li>
+                    <strong>Elite Designs Kenya</strong> – <i>Android & Web Dev Intern (2023–2024)</i>
+                    <ul>
+                        <li>Launched several mobile apps on Play Store</li>
+                        <li>Built and maintained websites for client businesses</li>
+                    </ul>
+                </li>
+
+                <!-- Job #2 -->
+                <li>
+                    <strong>Freelance Technical Writer</strong> – <i>2023-Present</i>
+                    <ul>
+                        <li>Wrote clear documentation that reduced support tickets</li>
+                        <li>Delivered work before deadlines and retained clients</li>
+                    </ul>
+                </li>
+
+                <!-- Job #3 -->
+                <li>
+                    <strong>Equity Bank Kenya Limited</strong> – <i>Tech Support Intern (2018-2019)</i>
+                    <ul>
+                        <li>Trained clients on mobile/online banking services</li>
+                        <li>Improved adoption of digital tools through user feedback</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects section showcasing 4 projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Python & SQL</h3>
+                    <p>Apps for automating peer learning & data handling</p>
+                    <a href="https://github.com/N-Iregi/alu-higher_level_programming" target="_blank">View</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Low-Level Programming in C</h3>
+                    <p>Memory manipulation & pointer usage in C</p>
+                    <a href="https://github.com/nev1lle/alx-low_level_programming" target="_blank">View</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Key Generator (Reverse Engineering)</h3>
+                    <p>Tool to generate serial keys for executables</p>
+                    <a href="https://github.com/nev1lle/alx-low_level_programming/blob/main/0x05-pointers_arrays_strings/101-keygen.c"
+                        target="_blank">View</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Submission Reminder App</h3>
+                    <p>App that reminds students about pending assignments</p>
+                    <a href="https://github.com/N-Iregi/submission_reminder_app_N-Iregi" target="_blank">View</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section with a form -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to send me a message for collaboration or job hiring. Thank you!</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section with contact icons and copyright -->
+    <footer>
+        <p>&copy; 2025 Neville Iregi</p>
+        <div class="social-icons">
+            <a href="https://x.com/0x6E6576" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/neville-iregi-b9972b182/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/N-Iregi" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:n.iregi@alustudent.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for interactions -->
+    <script src="script.js"></script>
+</body>
+
+</html>
